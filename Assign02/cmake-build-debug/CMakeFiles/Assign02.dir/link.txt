@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g -Wl,--enable-auto-import CMakeFiles/Assign02.dir/Assign02.cpp.o CMakeFiles/Assign02.dir/IntSet.cpp.o -o Assign02.exe -Wl,--out-implib,libAssign02.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
