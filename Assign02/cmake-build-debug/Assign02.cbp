@@ -11,20 +11,20 @@
 				<Option working_dir="/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign02/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign02/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Assign02">
@@ -34,6 +34,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign02/."/>
+					<Add directory="/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign02/.idea"/>
+					<Add directory="/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign02/cmake-build-debug"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
@@ -42,10 +45,10 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 Assign02"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 Assign02"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Assign02/fast">
@@ -55,6 +58,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign02/."/>
+					<Add directory="/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign02/.idea"/>
+					<Add directory="/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign02/cmake-build-debug"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
@@ -63,30 +69,60 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 Assign02/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 Assign02/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign02/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Ian/Documents/DATA\ STRUCTURES/Assign02/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign02/.idea/.gitignore">
+			<Option target="Assign02"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign02/.idea/Assign02.iml">
+			<Option target="Assign02"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign02/.idea/misc.xml">
+			<Option target="Assign02"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign02/.idea/modules.xml">
+			<Option target="Assign02"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign02/Assign02.cpp">
+			<Option target="Assign02"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign02/CMakeLists.txt">
 			<Option target="Assign02"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign02/IntSet.cpp">
 			<Option target="Assign02"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign02/IntSet.h">
+			<Option target="Assign02"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign02/cmake-build-debug/Assign02.cbp">
+			<Option target="Assign02"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign02/cmake-build-debug/CMakeCache.txt">
+			<Option target="Assign02"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign02/cmake-build-debug/Makefile">
+			<Option target="Assign02"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign02/cmake-build-debug/Testing/Temporary/LastTest.log">
+			<Option target="Assign02"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign02/cmake-build-debug/cmake_install.cmake">
 			<Option target="Assign02"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign02/CMakeLists.txt">
