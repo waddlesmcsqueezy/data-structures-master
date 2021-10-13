@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g -Wl,--enable-auto-import CMakeFiles/Assign05P1.dir/Assign05P1.cpp.o CMakeFiles/Assign05P1.dir/llcpImp.cpp.o -o Assign05P1.exe -Wl,--out-implib,libAssign05P1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

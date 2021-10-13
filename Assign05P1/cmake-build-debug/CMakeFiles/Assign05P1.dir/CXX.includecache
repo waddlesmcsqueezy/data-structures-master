@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign05P1/llcpImp.cpp
+iostream
+-
+cstdlib
+-
+llcpInt.h
+/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign05P1/llcpInt.h
+
+/cygdrive/c/Users/Ian/Documents/DATA STRUCTURES/Assign05P1/llcpInt.h
+iostream
+-
+

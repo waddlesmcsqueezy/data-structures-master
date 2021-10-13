@@ -78,7 +78,17 @@ using namespace std;
 
 void IntSet::resize(int new_capacity)
 {
-   cout << "resize() is not implemented yet..." << endl;
+    if (new_capacity <= 0) capacity = DEFAULT_CAPACITY;
+    else if (new_capacity <= used) capacity = used;
+    else capacity = new_capacity;
+
+    int* newData = new int[capacity];
+
+    for (int i = 0; i < used; i++)
+        newData[i] = data[i];
+
+    delete [] data;
+    data = newData;
 }
 
 IntSet::IntSet(int initial_capacity)

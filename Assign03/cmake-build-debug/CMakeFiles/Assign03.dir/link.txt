@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g -Wl,--enable-auto-import CMakeFiles/Assign03.dir/Assign03Auto.cpp.o CMakeFiles/Assign03.dir/Sequence.cpp.o -o Assign03.exe -Wl,--out-implib,libAssign03.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
