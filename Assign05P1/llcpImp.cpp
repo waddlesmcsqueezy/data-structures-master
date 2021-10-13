@@ -250,27 +250,45 @@ void PromoteTarget(Node*& headPtr, int target) {
     newNodePtr->data = target;
     newNodePtr->link = nullptr;
 
+    // if the head node is null indicating empty list, just make the target the head node
     if (headPtr == nullptr) {
         headPtr = newNodePtr;
-    } else {
+    // before continuing if the only data in the list is the target by itself
+    } else if (headPtr->data != target && headPtr->link != nullptr) {
         bool foundTarget = false;
-        while (cursor->link != nullptr) {
+        while (cursor != nullptr) {
+            // previous node as the current node
             previous = cursor;
+            // advance the current node
             cursor = cursor->link;
-            cout << cursor->data;
-            if (cursor == headPtr) cout << endl;
 
+            //but if we hit nullptr, then break
+            if (cursor == nullptr) break;
+
+            // if the node we are on is the target
             if (cursor->data == target) {
                 foundTarget = true;
+                // make the previous node's link the next node, essentially removing current node
                 previous->link = cursor->link;
-                cursor->link = headPtr;
-                headPtr = cursor;
+                // if the head's data is the target we just want to append to the head
+                if (headPtr->data == target) {
+                    // make the current node's link the head
+                    cursor->link = headPtr->link;
+                    //make the head pointer link to the current node
+                    headPtr->link = cursor;
+                //if the head node data is not the target
+                } else {
+                    // make the current node link to the head
+                    cursor->link = headPtr;
+                    // make the head node the current node
+                    headPtr = cursor;
+                }
             }
-
         }
 
+        // if we never found the target, just append to the back of the list
         if (!foundTarget) {
-            cursor->link = newNodePtr;
+            previous->link = newNodePtr;
         }
     }
 }
