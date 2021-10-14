@@ -244,50 +244,65 @@ void ListClear(Node*& headPtr, int noMsg)
 }
 
 void PromoteTarget(Node*& headPtr, int target) {
-    Node *cursor = headPtr;
-    Node *previous = nullptr;
-    Node *newNodePtr = new Node;
-    newNodePtr->data = target;
-    newNodePtr->link = nullptr;
-
-    // if the head node is null indicating empty list, just make the target the head node
+    bool foundTarget = false;
     if (headPtr == nullptr) {
+        Node *newNodePtr = new Node;
+        newNodePtr->data = target;
+        newNodePtr->link = nullptr;
         headPtr = newNodePtr;
-    // before continuing if the only data in the list is the target by itself
-    } else if (headPtr->data != target && headPtr->link != nullptr) {
-        bool foundTarget = false;
-        while (cursor != nullptr) {
-            // previous node as the current node
-            previous = cursor;
-            // advance the current node
-            cursor = cursor->link;
-
-            //but if we hit nullptr, then break
-            if (cursor == nullptr) break;
-
-            // if the node we are on is the target
+    } else if (!(headPtr->link == nullptr && headPtr->data == target)) {
+        Node *cursor, *previous;
+        bool onlyTarget = false;
+        if (headPtr->data == target) {
+            foundTarget = true;
+            onlyTarget = true;
+            cursor = headPtr;
+            previous = headPtr;
+            while (cursor->data == target && cursor->link != nullptr){
+                previous = cursor;
+                cursor = cursor->link;
+                if (cursor->data != target)
+                    onlyTarget = false;
+            }
+        } else {
+            cursor = headPtr->link;
+            previous = headPtr;
+        }
+        while (!onlyTarget && cursor != nullptr) {
             if (cursor->data == target) {
                 foundTarget = true;
-                // make the previous node's link the next node, essentially removing current node
-                previous->link = cursor->link;
-                // if the head's data is the target we just want to append to the head
+
+                if (cursor->link != nullptr)
+                    previous->link = cursor->link;
+                else
+                    previous->link = nullptr;
+
                 if (headPtr->data == target) {
-                    // make the current node's link the head
-                    cursor->link = headPtr->link;
-                    //make the head pointer link to the current node
-                    headPtr->link = cursor;
-                //if the head node data is not the target
+                    Node *savedCursor = cursor;
+                    cursor = headPtr;
+                    do {
+                        previous = cursor;
+                        cursor = cursor->link;
+                    }
+                    while (cursor->data == target);
+                    previous->link = savedCursor;
+                    savedCursor->link = cursor;
                 } else {
-                    // make the current node link to the head
-                    cursor->link = headPtr;
-                    // make the head node the current node
+                    Node *tempHeadPtr = headPtr;
+                    tempHeadPtr->link = headPtr->link;
                     headPtr = cursor;
+                    cursor->link = tempHeadPtr;
                 }
+
             }
+            previous = cursor;
+            cursor = cursor->link;
         }
 
-        // if we never found the target, just append to the back of the list
         if (!foundTarget) {
+            Node *newNodePtr = new Node;
+            newNodePtr->data = target;
+            newNodePtr->link = nullptr;
             previous->link = newNodePtr;
         }
     }
